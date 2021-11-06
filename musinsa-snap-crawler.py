@@ -6,7 +6,7 @@ path = '/Users/6mini/musinsa-snap-crawler/chromedriver' # chromedriver의 절대
 driver = webdriver.Chrome(path)
 
 page_num = 1 # 크롤링 시작 페이지
-last_page_num = 3 # 마지막 페이지 설정
+last_page_num = 10 # 마지막 페이지 설정
 styles = ['01', '02', '04', '09', '11', '12', '14'] # 크롤링 할 스타일 설정
 '''
 01: 스트릿/힙합
@@ -24,7 +24,7 @@ for style in styles:
         driver.get(url) # url 접속
 
         img_num = 0
-        while img_num < 2: # 60 고정: 무신사 스트릿 스냅 페이지의 이미지 수 60장
+        while img_num < 60: # 60 고정: 무신사 스트릿 스냅 페이지의 이미지 수 60장
             driver.find_elements_by_css_selector('.articleImg')[img_num].click() # 이미지 접속
             img_url = driver.find_elements_by_css_selector('.lbox')[0].get_attribute('href') # url 파싱 
 
