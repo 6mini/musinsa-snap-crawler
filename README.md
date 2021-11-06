@@ -1,2 +1,8 @@
-# MUSINSA-Street-Snap-Crawler
+# Musinsa Street Snap Crawler
 셀레니움 이용 무신사 커뮤니티 스트릿 스냅의 이미지 크롤러
+
+## Guide
+1. 크롤링하고 싶은 페이지의 시작과 끝을 설정한다.<br>
+(무신사 스트릿 스냅은 페이지 당 60장의 이미지가 게시되어있다.)
+2. 주석을 참고하여 크롤링 할 스타일을 list에 넣는다.
+3. 실행하면 style 별 숫자 폴더에 'page_num-img_num.jpg' 형태로 저장된다.
